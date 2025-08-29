@@ -1,0 +1,239 @@
+/* src/pages/Changements/Changements.module.css */
+
+.pageContainer {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent h2 {
+  margin: 0;
+  color: #1d1d1d;
+}
+
+.headerContent .ant-typography {
+  color: #666;
+  margin-top: 4px;
+}
+
+.statsRow {
+  margin-bottom: 24px;
+}
+
+.statsCard {
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.filtersCard {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.mainCard {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.changementInfo {
+  line-height: 1.4;
+}
+
+.changementTitle {
+  font-weight: 600;
+  color: #1d1d1d;
+}
+
+.changementDescription {
+  color: #666;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.changementLocation {
+  color: #999;
+  font-size: 11px;
+}
+
+.typeTag {
+  font-size: 11px;
+  border-radius: 4px;
+}
+
+.statutTag {
+  font-size: 11px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.userAvatar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userName {
+  font-size: 12px;
+  color: #666;
+}
+
+.actionButton {
+  padding: 4px 8px;
+  font-size: 12px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.priorityHigh {
+  border-left: 4px solid #ff4d4f;
+  padding-left: 12px;
+}
+
+.priorityNormal {
+  border-left: 4px solid #1890ff;
+  padding-left: 12px;
+}
+
+.priorityLow {
+  border-left: 4px solid #52c41a;
+  padding-left: 12px;
+}
+
+.priorityUrgent {
+  border-left: 4px solid #fa8c16;
+  padding-left: 12px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.emptyState .ant-alert {
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 16px;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .tableHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* Modal styles */
+.changementModal .ant-modal-body {
+  padding: 24px;
+}
+
+.changementModal .ant-form-item-label {
+  font-weight: 500;
+}
+
+.infoRow {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.infoRow .ant-typography {
+  color: #666;
+  font-size: 13px;
+}
+
+/* Create page specific styles */
+.createContainer {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.backButton {
+  margin-bottom: 16px;
+}
+
+.createCard {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sectionTitle {
+  margin: 32px 0 16px 0 !important;
+  color: #1d1d1d;
+  border-bottom: 2px solid #1890ff;
+  padding-bottom: 8px;
+}
+
+.sectionTitle:first-child {
+  margin-top: 0 !important;
+}
+
+.locationHelper {
+  color: #1890ff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.locationHelper:hover {
+  text-decoration: underline;
+}
+
+.uploadHelper {
+  display: block;
+  margin-top: 8px;
+  color: #666;
+  font-size: 12px;
+}
+
+.formActions {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+  text-align: right;
+}
+
+.prioritySelect .ant-select-selection-item {
+  display: flex;
+  align-items: center;
+}
+
+/* File upload customization */
+.ant-upload-list-picture .ant-upload-list-item {
+  border-radius: 6px;
+}
+
+.ant-upload-select-picture-card {
+  border-radius: 6px;
+  border: 2px dashed #d9d9d9;
+}
+
+.ant-upload-select-picture-card:hover {
+  border-color: #1890ff;
+}

@@ -1,0 +1,89 @@
+.dashboard {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.comingSoon {
+  text-align: center;
+  padding: 40px;
+  max-width: 400px;
+}
+
+.comingSoon h2 {
+  font-size: 24px;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.comingSoon p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.comingSoon ul {
+  text-align: left;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.comingSoon li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .placeholder {
+    min-height: 300px;
+    margin: 16px;
+    border-radius: 12px;
+  }
+  
+  .comingSoon {
+    padding: 24px;
+  }
+  
+  .comingSoon h2 {
+    font-size: 20px;
+  }
+}

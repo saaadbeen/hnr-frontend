@@ -1,0 +1,286 @@
+/* src/components/CartePanel/CartePanel.module.css */
+.panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background: white;
+  flex-shrink: 0;
+}
+
+.headerLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.panelTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.3;
+}
+
+.statut {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.closeButton:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.panelContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 12px;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #1e40af;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.section {
+  padding: 20px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.infoGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.infoLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  flex-shrink: 0;
+  min-width: 100px;
+}
+
+.infoValue {
+  font-size: 14px;
+  color: #1f2937;
+  text-align: right;
+  word-break: break-word;
+}
+
+.description {
+  margin: 0;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.actionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.actionItem {
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.actionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.actionType {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.actionDate {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.actionDescription {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.pvStatus {
+  font-size: 12px;
+  color: #059669;
+  font-weight: 500;
+}
+
+.noActions {
+  margin: 0;
+  font-size: 14px;
+  color: #9ca3af;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.actionButton:hover {
+  background: #1d4ed8;
+}
+
+.secondaryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.secondaryButton:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .panelHeader {
+    padding: 16px;
+  }
+
+  .panelTitle {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 16px;
+  }
+
+  .sectionTitle {
+    font-size: 15px;
+  }
+
+  .infoItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .infoLabel {
+    min-width: auto;
+  }
+
+  .infoValue {
+    text-align: left;
+  }
+
+  .actions {
+    padding: 16px;
+  }
+
+  .actionButton,
+  .secondaryButton {
+    padding: 12px 16px;
+  }
+}   

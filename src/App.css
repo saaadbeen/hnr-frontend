@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+/* Reset et styles globaux */
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+/* Styles pour Leaflet responsive */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Corrections pour mobile */
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    position: fixed !important;
+    left: -100% !important;
+    transition: left 0.3s ease !important;
+    z-index: 1001 !important;
+    height: 100vh !important;
+  }
+  
+  .ant-layout-sider.ant-layout-sider-collapsed {
+    left: 0 !important;
+  }
+  
+  .ant-drawer-body {
+    padding: 0 !important;
+  }
+  
+  .ant-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .ant-card {
+    margin-bottom: 12px;
+  }
+}
+
+/* Améliorations UX */
+.ant-btn-loading {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ant-spin-container {
+  position: relative;
+}
+
+/* Animation pour les transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Styles pour les notifications responsives */
+@media (max-width: 768px) {
+  .ant-notification {
+    width: calc(100vw - 32px) !important;
+    margin-right: 16px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Loading states */
+.loading-spinner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Cards responsive */
+@media (max-width: 576px) {
+  .ant-card .ant-card-head {
+    padding: 0 16px;
+  }
+  
+  .ant-card .ant-card-body {
+    padding: 16px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Form responsive */
+@media (max-width: 768px) {
+  .ant-form-item {
+    margin-bottom: 16px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .ant-col {
+    margin-bottom: 0;
   }
+}
+
+/* Table mobile improvements */
+@media (max-width: 768px) {
+  .ant-table-thead > tr > th {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  
+  .ant-table-tbody > tr > td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nom": "Hassan Alami",
+    "role": "MEMBRE_DSI",
+    "prefecture": "Casablanca",
+    "commune": "Anfa",
+    "email": "h.alami@hnr.gov.ma",
+    "telephone": "+212 522 123 456",
+    "motDePasse": "dsi123",
+    "statut": "ACTIF",
+    "createdAt": "2024-01-15T09:00:00Z"
+  },
+  {
+    "id": 2,
+    "nom": "Fatima Bennani",
+    "role": "GOUVERNEUR",
+    "prefecture": "Mohammedia",
+    "commune": "Mohammedia Centre",
+    "email": "f.bennani@mohammedia.gov.ma",
+    "telephone": "+212 523 234 567",
+    "motDePasse": "gouverneur123",
+    "statut": "ACTIF",
+    "createdAt": "2024-01-10T10:30:00Z"
+  },
+  {
+    "id": 3,
+    "nom": "Ahmed Tazi",
+    "role": "AGENT_AUTORITE",
+    "prefecture": "Casablanca",
+    "commune": "Anfa",
+    "email": "a.tazi@casablanca.gov.ma",
+    "telephone": "+212 522 345 678",
+    "motDePasse": "agent123",
+    "statut": "ACTIF",
+    "createdAt": "2024-02-01T14:00:00Z"
+  },
+  {
+    "id": 4,
+    "nom": "Khadija El Mansouri",
+    "role": "AGENT_AUTORITE",
+    "prefecture": "Mohammedia",
+    "commune": "Mohammedia Centre",
+    "email": "k.elmansouri@mohammedia.gov.ma",
+    "telephone": "+212 523 456 789",
+    "motDePasse": "agent123",
+    "statut": "ACTIF",
+    "createdAt": "2024-02-05T11:15:00Z"
+  },
+  {
+    "id": 5,
+    "nom": "Youssef Berrada",
+    "role": "AGENT_AUTORITE",
+    "prefecture": "Casablanca",
+    "commune": "Sidi Bernoussi",
+    "email": "y.berrada@casablanca.gov.ma",
+    "telephone": "+212 522 567 890",
+    "motDePasse": "agent123",
+    "statut": "ACTIF",
+    "createdAt": "2024-02-10T16:45:00Z"
+  }
+]

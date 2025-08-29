@@ -1,0 +1,62 @@
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.content {
+  max-width: 400px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  color: #1e40af;
+  margin: 0 0 16px 0;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 16px 0;
+}
+
+.message {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.homeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #1e40af;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.homeLink:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+  }
+}

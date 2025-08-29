@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "nom": "Douar Anfa Hay Hassani",
+    "description": "Habitat informel près du complexe Anfa",
+    "prefecture": "Casablanca",
+    "commune": "Anfa",
+    "missionId": 1,
+    "statut": "EN_COURS_ERADICATION",
+    "population": 245,
+    "createdAt": "2025-08-10T09:30:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.6210, 33.5845],
+        [-7.6190, 33.5845],
+        [-7.6190, 33.5855],
+        [-7.6210, 33.5855],
+        [-7.6210, 33.5845]
+      ]]
+    }
+  },
+  {
+    "id": 2,
+    "nom": "Douar Mohammedia Port",
+    "description": "Zone résidentielle précaire près du port",
+    "prefecture": "Mohammedia",
+    "commune": "Mohammedia Centre",
+    "missionId": 2,
+    "statut": "ERADIQUE",
+    "population": 0,
+    "createdAt": "2025-07-25T10:45:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.3830, 33.6870],
+        [-7.3810, 33.6870],
+        [-7.3810, 33.6885],
+        [-7.3830, 33.6885],
+        [-7.3830, 33.6870]
+      ]]
+    }
+  },
+  {
+    "id": 3,
+    "nom": "Douar Sidi Bernoussi Ouest",
+    "description": "Habitat précaire zone industrielle",
+    "prefecture": "Casablanca",
+    "commune": "Sidi Bernoussi",
+    "missionId": 3,
+    "statut": "PARTIELLEMENT_ERADIQUE",
+    "population": 156,
+    "createdAt": "2025-08-01T09:00:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.5320, 33.6105],
+        [-7.5300, 33.6105],
+        [-7.5300, 33.6125],
+        [-7.5320, 33.6125],
+        [-7.5320, 33.6105]
+      ]]
+    }
+  },
+  {
+    "id": 4,
+    "nom": "Douar Maarif Extension",
+    "description": "Extension informelle quartier Maarif",
+    "prefecture": "Casablanca",
+    "commune": "Maarif",
+    "missionId": null,
+    "statut": "IDENTIFIE",
+    "population": 189,
+    "createdAt": "2025-08-05T14:20:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.5900, 33.5700],
+        [-7.5880, 33.5700],
+        [-7.5880, 33.5720],
+        [-7.5900, 33.5720],
+        [-7.5900, 33.5700]
+      ]]
+    }
+  },
+  {
+    "id": 5,
+    "nom": "Douar Ben Yakhlef Sud",
+    "description": "Habitat précaire périphérie Ben Yakhlef",
+    "prefecture": "Mohammedia",
+    "commune": "Ben Yakhlef",
+    "missionId": 4,
+    "statut": "EN_COURS_ERADICATION",
+    "population": 203,
+    "createdAt": "2025-08-14T11:30:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.4010, 33.6990],
+        [-7.3990, 33.6990],
+        [-7.3990, 33.7010],
+        [-7.4010, 33.7010],
+        [-7.4010, 33.6990]
+      ]]
+    }
+  },
+  {
+    "id": 6,
+    "nom": "Douar Hay Mohammadi",
+    "description": "Zone d'habitat non réglementaire",
+    "prefecture": "Casablanca",
+    "commune": "Hay Mohammadi",
+    "missionId": null,
+    "statut": "SURVEILLE",
+    "population": 167,
+    "createdAt": "2025-08-08T16:15:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.5400, 33.5900],
+        [-7.5380, 33.5900],
+        [-7.5380, 33.5920],
+        [-7.5400, 33.5920],
+        [-7.5400, 33.5900]
+      ]]
+    }
+  }
+]

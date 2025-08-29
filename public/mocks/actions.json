@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "type": "DEMOLITION",
+    "date": "2025-08-15T10:30:00Z",
+    "userId": 3,
+    "cibleType": "MISSION",
+    "cibleId": 1,
+    "statut": "TERMINEE",
+    "description": "Démolition structure principale douar Anfa Nord",
+    "coordonnees": [-7.6200, 33.5850],
+    "createdAt": "2025-08-15T10:30:00Z",
+    "pv": {
+      "id": 1,
+      "statut": "PUBLIE",
+      "dateCreation": "2025-08-15T10:45:00Z",
+      "datePublication": "2025-08-15T11:00:00Z",
+      "fichiers": [
+        {
+          "id": 1,
+          "nom": "PV_DEMOLITION_ANFA_001.pdf",
+          "taille": "2.1 MB",
+          "type": "application/pdf"
+        },
+        {
+          "id": 2,
+          "nom": "photos_avant_apres.zip",
+          "taille": "8.5 MB",
+          "type": "application/zip"
+        }
+      ],
+      "meta": {
+        "refMission": "MISS-ANFA-001",
+        "adresse": "Quartier Anfa Nord, Avenue Hassan II",
+        "commune": "Anfa",
+        "prefecture": "Casablanca",
+        "agentNom": "Ahmed Tazi",
+        "observations": "Démolition effectuée conformément à l'arrêté préfectoral. Aucune résistance. Relogement familles organisé.",
+        "heure": "10:30",
+        "lieu": "Douar Anfa Hay Hassani - Structure principale",
+        "superficie": "150 m²",
+        "equipements": "Pelleteuse, camion évacuation"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "type": "SIGNALEMENT",
+    "date": "2025-08-14T14:15:00Z",
+    "userId": 4,
+    "cibleType": "DOUAR",
+    "cibleId": 5,
+    "statut": "TERMINEE",
+    "description": "Signalement nouvelle construction non autorisée",
+    "coordonnees": [-7.4000, 33.7000],
+    "createdAt": "2025-08-14T14:15:00Z",
+    "pv": {
+      "id": 2,
+      "statut": "PUBLIE",
+      "dateCreation": "2025-08-14T14:30:00Z",
+      "datePublication": "2025-08-14T15:00:00Z",
+      "fichiers": [
+        {
+          "id": 3,
+          "nom": "PV_SIGNALEMENT_BENYAKHLEF_002.pdf",
+          "taille": "1.8 MB",
+          "type": "application/pdf"
+        },
+        {
+          "id": 4,
+          "nom": "photos_constat.jpg",
+          "taille": "3.2 MB",
+          "type": "image/jpeg"
+        }
+      ],
+      "meta": {
+        "refMission": "MISS-BENYK-004",
+        "adresse": "Douar Ben Yakhlef Sud, Route Provinciale 3010",
+        "commune": "Ben Yakhlef",
+        "prefecture": "Mohammedia",
+        "agentNom": "Khadija El Mansouri",
+        "observations": "Construction en cours sans permis. Matériaux parpaing et tôle. Propriétaire absent lors du constat.",
+        "heure": "14:15",
+        "lieu": "Douar Ben Yakhlef Sud - Parcelle 15",
+        "superficie": "80 m²",
+        "typeConstruction": "Résidentielle R+1"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "type": "AMENDE",
+    "date": "2025-08-16T09:45:00Z",
+    "userId": 5,
+    "cibleType": "DOUAR",
+    "cibleId": 3,
+    "statut": "TERMINEE",
+    "description": "Amende occupation illégale domaine public",
+    "coordonnees": [-7.5300, 33.6100],
+    "createdAt": "2025-08-16T09:45:00Z",
+    "pv": {
+      "id": 3,
+      "statut": "PUBLIE",
+      "dateCreation": "2025-08-16T10:00:00Z",
+      "datePublication": "2025-08-16T10:30:00Z",
+      "fichiers": [
+        {
+          "id": 5,
+          "nom": "PV_AMENDE_SIDIBERN_003.pdf",
+          "taille": "1.5 MB",
+          "type": "application/pdf"
+        },
+        {
+          "id": 6,
+          "nom": "preuve_paiement.pdf",
+          "taille": "0.8 MB",
+          "type": "application/pdf"
+        }
+      ],
+      "meta": {
+        "refMission": "MISS-SIDIB-003",
+        "adresse": "Douar Sidi Bernoussi Ouest, Boulevard Zerktouni",
+        "commune": "Sidi Bernoussi",
+        "prefecture": "Casablanca",
+        "agentNom": "Youssef Berrada",
+        "observations": "Commerce informel sur voie publique. Contrevenant coopératif. Paiement immédiat effectué.",
+        "montantAmende": "500 DH",
+        "heure": "09:45",
+        "lieu": "Douar Sidi Bernoussi Ouest - Intersection principale",
+        "motif": "Occupation domaine public sans autorisation",
+        "modeReglement": "Espèces"
+      }
+    }
+  }
+]

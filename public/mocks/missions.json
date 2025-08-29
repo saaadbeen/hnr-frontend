@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "titre": "Mission Anfa Nord",
+    "description": "Éradication douar informel zone résidentielle Anfa",
+    "statut": "EN_COURS",
+    "prefecture": "Casablanca",
+    "commune": "Anfa",
+    "agentId": 3,
+    "createdAt": "2025-08-10T09:00:00Z",
+    "updatedAt": "2025-08-15T14:30:00Z",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-7.6200, 33.5850]
+    }
+  },
+  {
+    "id": 2,
+    "titre": "Zone Industrielle Mohammedia",
+    "description": "Contrôle construction non autorisée secteur industriel",
+    "statut": "ERADIQUE",
+    "prefecture": "Mohammedia",
+    "commune": "Mohammedia Centre",
+    "agentId": 4,
+    "createdAt": "2025-07-25T10:15:00Z",
+    "updatedAt": "2025-08-12T16:45:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.3824, 33.6863],
+        [-7.3800, 33.6863],
+        [-7.3800, 33.6880],
+        [-7.3824, 33.6880],
+        [-7.3824, 33.6863]
+      ]]
+    }
+  },
+  {
+    "id": 3,
+    "titre": "Douar Sidi Bernoussi Est",
+    "description": "Mission éradication habitat précaire",
+    "statut": "DEMI_ERADIQUE",
+    "prefecture": "Casablanca",
+    "commune": "Sidi Bernoussi",
+    "agentId": 5,
+    "createdAt": "2025-08-01T08:30:00Z",
+    "updatedAt": "2025-08-16T12:00:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.5300, 33.6100],
+        [-7.5280, 33.6100],
+        [-7.5280, 33.6120],
+        [-7.5300, 33.6120],
+        [-7.5300, 33.6100]
+      ]]
+    }
+  },
+  {
+    "id": 4,
+    "titre": "Ben Yakhlef Centre",
+    "description": "Signalement occupation domaine public",
+    "statut": "EN_COURS",
+    "prefecture": "Mohammedia",
+    "commune": "Ben Yakhlef",
+    "agentId": 4,
+    "createdAt": "2025-08-14T11:00:00Z",
+    "updatedAt": "2025-08-16T09:15:00Z",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-7.4000, 33.7000]
+    }
+  },
+  {
+    "id": 5,
+    "titre": "Rocade Casablanca-Mohammedia",
+    "description": "Zone frontalière - constructions illégales le long de la rocade",
+    "statut": "EN_COURS",
+    "prefecture": "Casablanca",
+    "commune": "Ain Sebaa",
+    "agentId": 3,
+    "createdAt": "2025-08-12T15:20:00Z",
+    "updatedAt": "2025-08-16T13:45:00Z",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-7.4500, 33.6200],
+        [-7.4400, 33.6200],
+        [-7.4400, 33.6300],
+        [-7.4500, 33.6300],
+        [-7.4500, 33.6200]
+      ]]
+    }
+  }
+]

@@ -1,0 +1,337 @@
+/* src/components/MissionCreationModal/MissionCreationModal.module.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.closeButton:hover:not(:disabled) {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.closeButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modalContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* Étape instructions */
+.instructionsStep {
+  padding: 24px;
+}
+
+.instructions h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.instructions p {
+  margin: 0 0 12px 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.instructions ul {
+  margin: 0 0 16px 0;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.note {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 12px;
+  color: #0369a1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Formulaire */
+.form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.geometryInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #166534;
+  font-weight: 500;
+}
+
+.editGeometryButton {
+  background: none;
+  border: 1px solid #22c55e;
+  color: #16a34a;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.editGeometryButton:hover {
+  background: #dcfce7;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input, .select, .textarea {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  color: #1f2937;
+  transition: border-color 0.2s;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input:disabled, .select:disabled, .textarea:disabled {
+  background: #f9fafb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.warning {
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #92400e;
+  margin-top: 4px;
+}
+
+.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.cancelButton {
+  padding: 12px 24px;
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.submitButton {
+  padding: 12px 24px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.submitButton:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .overlay {
+    padding: 16px;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+
+  .modal {
+    max-width: none;
+    max-height: 85vh;
+    border-radius: 16px;
+  }
+
+  .modalHeader {
+    padding: 20px 20px 16px;
+  }
+
+  .modalTitle {
+    font-size: 18px;
+  }
+
+  .instructionsStep,
+  .form {
+    padding: 20px;
+  }
+
+  .form {
+    gap: 16px;
+  }
+
+  .formActions {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .cancelButton,
+  .submitButton {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+
+  .input, .select, .textarea {
+    font-size: 16px; /* Évite le zoom sur iOS */
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 375px) {
+  .overlay {
+    padding: 12px;
+    padding-top: 40px;
+  }
+
+  .modalHeader {
+    padding: 16px;
+  }
+
+  .instructionsStep,
+  .form {
+    padding: 16px;
+  }
+
+  .modalTitle {
+    font-size: 16px;
+  }
+}
