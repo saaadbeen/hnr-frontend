@@ -106,7 +106,7 @@ export const getPrefectureFromCommune = (communeRaw) => {
   const arrondissement = getArrondissementFromCommune(communeRaw);
   if (!arrondissement) return null;
   for (const [prefecture, arr] of Object.entries(PREFECTURES_ARRONDISSEMENTS)) {
-    if (arr === arrondissement) return prefecture;$
+    if (arr === arrondissement) return prefecture;
   }
   return null;
 };

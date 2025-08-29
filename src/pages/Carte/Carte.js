@@ -510,10 +510,11 @@ export default function Carte() {
   }, [updateMarkers, mapLoaded]);
 
   const simulateNetworkDelay = useCallback(async () => {
-    setLoaing(true);
+    setLoading(true);   // ✅
     await new Promise(r => setTimeout(r, 500));
     setLoading(false);
   }, []);
+
 
   const debouncedFilterChange = useMemo(
     () => debounce((newFilters) => {
