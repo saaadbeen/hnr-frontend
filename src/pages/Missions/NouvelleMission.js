@@ -13,6 +13,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import mockApi from '../../services/mockApi';
 import { COMMUNES_BY_PREFECTURE } from '../../services/mockData';
+import { useLocation } from 'react-router-dom';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -697,7 +698,7 @@ export default function NouvelleMission() {
                   {agents.length === 0 && commune && (
                     <Alert
                       message="Aucun agent disponible"
-                      description={`Aucun agent d'autorité n'est assigné à la commune ${commune}. Contactez l'administration pour assigner un agent à cette zone.`}
+                      description={`Aucun agent d'autorité n'est assigné à la commune ${commune}`}
                       type="warning"
                       showIcon
                       size="small"

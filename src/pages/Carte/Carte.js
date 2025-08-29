@@ -699,19 +699,7 @@ export default function Carte() {
               />
             </Tooltip>
 
-            {!isAgent && (
-              <Tooltip title="Créer une nouvelle mission">
-                <Button
-                  type="primary"
-                  icon={<PlusOutlined />}
-                  onClick={navigateToMissionCreation}
-                  style={{ minWidth: 44, minHeight: 44 }}
-                  aria-label="Créer une nouvelle mission"
-                >
-                  Mission
-                </Button>
-              </Tooltip>
-            )}
+            
           </Space>
         </div>
 
@@ -785,16 +773,7 @@ export default function Carte() {
               Actualiser
             </Button>
 
-            {!isAgent && (
-              <Button
-                type="primary"
-                icon={<PlusOutlined />}
-                onClick={navigateToMissionCreation}
-                aria-label="Créer une nouvelle mission"
-              >
-                Nouvelle mission
-              </Button>
-            )}
+            
 
             <Button 
               icon={<FullscreenOutlined />} 
